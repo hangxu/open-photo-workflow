@@ -4,7 +4,11 @@
 
 **Split a photo into four tiles, edit each with `image_gen`, then align and stitch the results into a larger image.** This is the main technique we want to share, and a practical way to put your ChatGPT Pro image-generation allowance to work.
 
-In our Codex built-in `image_gen` runs, we repeatedly received **1536×1024** landscape or **1024×1536** portrait outputs, about 1.57 megapixels. That can be too small when editing high-resolution camera photographs. Giving each call only part of the photograph, then combining four outputs, reduces the constraint of a single whole-image output.
+## Why four tiles: 1536×1024 is not enough
+
+**1536×1024 is only about 1.5 megapixels—not enough even for posting on Xiaohongshu (RED), by our standards.** We want room to crop and zoom into faces and clothing details, with edited photos that hold up beyond a thumbnail.
+
+In our Codex built-in `image_gen` runs, we repeatedly received **1536×1024** landscape or **1024×1536** portrait outputs, about 1.57 megapixels to be precise. That makes output size a bottleneck when editing high-resolution camera photographs. Giving each call only part of the photograph, then combining four outputs, reduces the constraint of a single whole-image output.
 
 1536×1024 is a common size observed in this project, not a claim that every model or version has a fixed limit. The workflow uses the dimensions the tool actually returns.
 
