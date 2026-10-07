@@ -1,0 +1,4 @@
+interface:
+  display_name: "四块照片细节增强"
+  short_description: "仅为目标查看尺度可见收益升级分块，预算登记后生成并交付"
+  default_prompt: "使用 $imagegen-tiled-upscale，先确认目标查看尺度上的收益与至少四次生成预算，再增强可见细节、融合并按需超分。按约定接纳轻微瑕疵，保留必要原生结果并交付。"

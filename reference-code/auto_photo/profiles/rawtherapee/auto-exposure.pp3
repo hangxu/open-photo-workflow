@@ -1,0 +1,28 @@
+[Version]
+AppVersion=5.13
+Version=352
+
+[Exposure]
+Auto=true
+Clip=0.001
+HistogramMatching=false
+
+[HLRecovery]
+Enabled=true
+Method=Coloropp
+
+[White Balance]
+Enabled=true
+Setting=Camera
+
+[Color Management]
+InputProfile=(cameraICC)
+WorkingProfile=Rec2020
+OutputProfile=RTv4_sRGB
+ToneCurve=false
+ApplyLookTable=false
+ApplyBaselineExposureOffset=true
+ApplyHueSatMap=true
+
+[Resize]
+Enabled=false

@@ -1,0 +1,63 @@
+{
+  "baseline": "neutral",
+  "recipe": {
+    "preset": "neutral",
+    "adjustments": {
+      "exposure_ev": 0.82,
+      "temperature": -0.065,
+      "tint": 0.02,
+      "contrast": 0.16,
+      "saturation": 0.75,
+      "highlights": -0.25,
+      "shadows": -0.12
+    }
+  },
+  "tone_curve": {
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        0.04,
+        0.015
+      ],
+      [
+        0.08,
+        0.06
+      ],
+      [
+        0.2,
+        0.29
+      ],
+      [
+        0.5,
+        0.73
+      ],
+      [
+        0.8,
+        0.92
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "highlight_compression": 18,
+    "highlight_threshold": 75
+  },
+  "gradient": {
+    "side": "top",
+    "exposure_ev": -0.75,
+    "center": [
+      0.5,
+      0.34
+    ],
+    "feather_percent": 55
+  },
+  "denoise": {
+    "luma": 3,
+    "chroma": 15,
+    "detail": 60
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "照片集修图"
+  short_description: "先看整集、优先机内 JPEG，按用途调色或生成，批量验收交片"
+  default_prompt: "使用 $photo-workflow，先看整集确定摄影目标，优先合格机内 JPEG，按需显影、调色或整图生成；按约定接纳轻微瑕疵，批量验收并交付静态相册。"
