@@ -20,7 +20,7 @@ python SKILL/scripts/tiled_upscale.py prepare SOURCE --output RUN/prepared
 
 输出 `prepared/prepare.json` 和 `prepared/inputs/TL.png`、`TR.png`、`BL.png`、`BR.png`。RAW 必须先显影；输入归正并转 sRGB，无 ICC 的 RGB 按 sRGB 解释。记录实际边界、尺寸、路径、文件大小及修改时间，不生成哈希。
 
-纳入 workflow T 时，每次发出生成前用其 generation-begin 登记尝试；独立脚本没有预算拦截，Agent 必须另记相同调用计数。默认每目标一次，明确 max_attempts 为 2 才能有原因地再试一次。Agent 查看准确图块后调用内置 imagegen，默认单输入。将原生返回保存在 `RUN/native`，记录块 ID、输入版本与张数、完整提示词、尝试号、结果尺寸、状态及实际披露用量。失败同样计数，未知型号/token 为 `null`。脚本不会生成、等待其他代理或接收迟到结果。
+纳入 workflow T 时，每次发出生成前用其 generation-begin 登记尝试；独立脚本没有预算拦截，Agent 必须另记相同调用计数。默认每目标一次，明确 max_attempts 为 2 才能有原因地再试一次。Agent 查看准确图块后调用内置 imagegen 或用户明确选择的图片编辑工具，默认单输入；外部工具接入见 [说明](https://github.com/hangxu/open-photo-workflow/blob/main/docs/image-generation-tools.md)。将原生返回保存在 `RUN/native`，记录块 ID、输入版本与张数、完整提示词、尝试号、结果尺寸、状态及实际披露用量。失败同样计数，未知型号/token 为 `null`。脚本不会生成、等待其他代理或接收迟到结果。
 
 ## 合并
 

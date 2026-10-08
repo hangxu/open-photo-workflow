@@ -10,7 +10,7 @@ cd /path/to/open-photo-workflow/reference-code
 
 参考 CLI `python -m auto_photo workflow` 处理 JPG/JPEG/PNG 和受引擎支持的 RAW，包括索尼 ARW。支持扩展名由代码决定，实际机型与压缩模式仍需按输入判断。输入、旧交付只读；schema 2 批次用 `state.json` 保存来源、计划、版本、调用和复核，历史 schema 1 不原地迁移。这些是本实现的约定，不要求其他工具照搬。
 
-本地 CLI 负责准备、显影、调色、后处理和记录，不调用宿主内置 imagegen。生成步骤由 Agent 通过宿主工具完成，再把原生结果导入。使用 Pro 登录时，这些调用走账户共享用量，本项目无需 API key；工具可用性和限额以宿主为准，不承诺无限调用、固定模型或原生输出分辨率。用户自行接入的外部规划器另按其服务配置。
+本地 CLI 负责准备、显影、调色、后处理和记录，不调用宿主内置 imagegen。生成步骤由 Agent 通过内置 imagegen 或用户明确选择的图片编辑工具完成，再把原生结果导入；见 [工具接入说明](image-generation-tools.md)。内置 imagegen 使用 Pro 登录时走账户共享用量，无需 API key；外部 API 使用自己的密钥和额度。工具可用性和限额以宿主为准，不承诺无限调用、固定模型或原生输出分辨率。用户自行接入的外部规划器另按其服务配置。
 
 ## 以交片效果决定工作量
 
@@ -173,7 +173,7 @@ run 只自动执行本地阶段。生成请求保存在 state 的 generation_req
 python -m auto_photo workflow generation-begin output/session-01 PHOTO_ID
 ```
 
-仅返回 `should_call:true` 才调用内置 imagegen；先查看返回工单的准确 input。`should_call:false` 表示已有待定交接，不重复发送。记录 attempt_id，原生图按原字节保存后导入：
+仅返回 `should_call:true` 才调用所选图片生成工具；先查看返回工单的准确 input。`should_call:false` 表示已有待定交接，不重复发送。记录 attempt_id，原生图按原字节保存后导入：
 
 ```sh
 python -m auto_photo workflow import-generated output/session-01 \

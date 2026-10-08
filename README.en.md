@@ -48,6 +48,12 @@ Sign into Codex with ChatGPT Pro and let the Agent call the host's built-in `ima
 
 Skills guide the Agent; they do not supply an image service or increase your allowance. Model names, token usage, and native resolution are not guaranteed when the tool does not expose them. Other Agents can use the method with their own available image tools.
 
+## Other image generation tools
+
+Built-in `image_gen` with Pro remains the default. You can explicitly choose **wan2.6-image** or another image-editing tool: replace only generation, keeping input preparation, 2×2 tiling, alignment, merging, and super-resolution. See the [single-call Wan example and integration guide](docs/image-generation-tools.md). Other tools can feed their results into the same workflow; they are not all integrated or tested. External APIs use their own credentials and allowance, not ChatGPT Pro. Keep keys in the local environment, never in prompts, records, or the repository.
+
+Both skills now include [gaze protection](skills/photo-workflow/references/photographic-goals.md#眼神与眼部保护): preserve gaze, eyelid opening, and occlusion instead of letting makeup open eyes or invent hidden detail. Check this during the existing portrait review, without another model call.
+
 ## The workflow
 
 1. **Review the collection.** Choose a look based on subject matter, lighting, and intended use. Portraits and still life may need different approaches. Group matching RAW/JPEG pairs.

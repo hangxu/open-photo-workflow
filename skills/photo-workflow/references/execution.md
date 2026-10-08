@@ -63,13 +63,13 @@ python -m auto_photo.raw_pipeline develop input/photo.ARW control.json output/NE
 
 ## 生成桥接与预算登记
 
-run 只自动执行本地阶段。C 直接出 JPG；A/B/T 准备准确输入和 state 中的 generation_request，等待 Agent 调用宿主内置 imagegen。Pro 登录方式使用账户共享用量，本项目不需要 API key；这不保证工具可用、无限用量、固定型号或输出尺寸。每次新调用先登记：
+run 只自动执行本地阶段。C 直接出 JPG；A/B/T 准备准确输入和 state 中的 generation_request，等待 Agent 调用内置 imagegen 或用户明确选择的图片编辑工具。内置 Pro 路线无需 API key；外部 API 使用自己的密钥和额度，见 [工具接入说明](https://github.com/hangxu/open-photo-workflow/blob/main/docs/image-generation-tools.md)。这不保证工具可用、无限用量、固定型号或输出尺寸。每次新调用先登记：
 
 ```sh
 python -m auto_photo workflow generation-begin output/BATCH PHOTO_ID
 ```
 
-**只有返回 `should_call:true` 才调用 imagegen**，先看返回工单的准确 input。记录 attempt_id；`should_call:false` 表示已有待定请求，不重复发送、不用轮询登记消耗预算。回到已有返回或明确的停止/返工决定。
+**只有返回 `should_call:true` 才调用所选图片生成工具**，先看返回工单的准确 input。记录 attempt_id；`should_call:false` 表示已有待定请求，不重复发送、不用轮询登记消耗预算。回到已有返回或明确的停止/返工决定。
 
 ```sh
 python -m auto_photo workflow import-generated output/BATCH PHOTO_ID /absolute/generated.png --attempt-id ATTEMPT_ID --metadata generation.json

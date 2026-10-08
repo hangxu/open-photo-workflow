@@ -8,6 +8,22 @@
 
 执行：照片集按场景共享目标；新风格用代表图验证，默认一版、必要时修正一次。无需每张多候选。选择 RAW 引擎显影时，不调用生成式重绘。人像形体/皮肤修饰只在明确授权的生成路径实施。提示词中的保留要求用于减少漂移，不把每一处细微差异自动升级为返工理由；最终按交付用途和约定容忍度验收。
 
+## 眼神与眼部保护
+
+适用于有可见眼部的人像生成，跨 image_gen、万相等工具使用。除非用户明确要求改变视线或修复闭眼，妆容与肤质修饰服从原有眼神和表情：保留眼型、眼睑开合、可辨认的虹膜/瞳孔相对位置、自然不对称和头发/眼镜遮挡。不能把“保持身份”当作这些细项已经受保护。
+
+人像共享提示词加一次以下短句，逐图只补真正的例外；无脸、眼部在画外的图块不添加眼部美化要求：
+
+> 保持原片的眼神、眼睑开合和眼型，以及可见虹膜/瞳孔相对眼睑的位置。自然妆容只修饰原有可见区域，不睁大眼睛、不改变视线、不增加眼白或凭空添加眼部高光。侧脸、闭眼、眯眼及刘海遮挡均保留原状；看不清的瞳孔或被遮住的眼睛保持原有可见程度，不补画理想化眼球。改善眼周肤色时不要抹平眼睑边缘和睫毛根部。
+
+英文等义短句：
+
+> Preserve the photographed gaze, eyelid opening, eye shape, visible iris/pupil positions relative to the eyelids, and existing occlusion. Makeup must not open or enlarge the eyes, redirect the gaze, expose extra sclera, or invent catchlights. Keep closed, squinting, obscured or unclear eyes as photographed; do not reconstruct hidden eye detail. Retain the eyelid margins and lash roots when retouching nearby skin.
+
+复核并入现有一次人像对照：先看表情是否自然；侧脸、眼部遮挡、重妆或跨块眼部存在疑点时，再看一张原片/成片眼周裁切。不要求每张新增模型调用、眼球坐标检测或逐像素检查。原片视线不清楚时只报告可见结构，不臆测精确注视方向；分辨率和配准通过不能证明眼神正确。
+
+若眼神已明显改变，在已有预算内优先针对眼周修正；没有剩余预算则标注问题并保留原基底，不静默整图重生成。原片眼周回贴可作为另行选择的修复方法，但需对齐完整眼周和遮挡关系，不能只粘贴孤立眼球；提示词本身不能保证像素级保护。用户确实要求睁眼或改视线时，单独描述这一操作，并说明缺乏清晰参考时无法确认真实眼部细节。
+
 ## 1. 自然通透（Clean natural）
 
 - 适用：日常、旅行、环境人像，以及未给明确风格的默认起点。
