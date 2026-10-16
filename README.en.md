@@ -12,6 +12,28 @@ In our Codex built-in `image_gen` runs, we repeatedly received **1536×1024** la
 
 1536×1024 is a common size observed in this project, not a claim that every model or version has a fixed limit. The workflow uses the dimensions the tool actually returns.
 
+## Two photos, edited with four tiles
+
+Two CC0 photographs, styled as a vivid alpine travel editorial and a warm bronze portrait. Each photo uses four built-in `image_gen` calls, 12% overlap, registration and blending, followed by FSRCNN 2× and light sharpening.
+
+**Landscape: brighter forest midtones, rich greens, clear lake reflections and luminous snow.**
+
+![Landscape: input on the left, four-tile result on the right](docs/assets/demos/landscape-comparison.jpg)
+
+**Portrait: warm bronze skin, soft highlights and black fabric detail, preserving the closed-eye expression.**
+
+![Portrait: input on the left, four-tile result on the right](docs/assets/demos/portrait-comparison.jpg)
+
+| Example | Merged | After 2× | Generation calls |
+| --- | --- | --- | --- |
+| Landscape | 2743×1829 | 5486×3658 | 4 |
+| Portrait | 2742×1828 | 5484×3656 | 4 |
+
+[Landscape detail](docs/assets/demos/landscape-detail.jpg) · [Portrait detail](docs/assets/demos/portrait-detail.jpg) · [Sources and CC0 license](docs/demo-photos.md) · [Full prompts and processing record](docs/demo-prompts.json)
+
+Full-size results: [landscape 5486×3658](docs/assets/demos/landscape-final.jpg) · [portrait 5484×3656](docs/assets/demos/portrait-final.jpg). Comparisons show the input on the left and the four-tile result on the right.
+
+
 ## The core technique: generate four tiles, stitch, then upscale
 
 ```mermaid
@@ -40,7 +62,7 @@ These are calculated examples, not guaranteed generation results. Overlapping pi
 
 This route requires at least four image calls and can produce seams or local distortion. It suits tasks that need larger results and can tolerate minor generative defects. See the [imagegen-tiled-upscale skill](skills/imagegen-tiled-upscale/SKILL.md) for the procedure. We also share collection planning, input preparation, photographic prompts, and local grading methods. Adapt them and contribute useful prompts or lessons from failed edits.
 
-**The code is for reference only. Installing the skills requires no Python dependencies or test runs.** [reference-code/](reference-code/) contains local implementations to read, modify, or adapt with an Agent when needed. No photographs or model weights are included.
+**The code is for reference only. Installing the skills requires no Python dependencies or test runs.** [reference-code/](reference-code/) contains local implementations to read, modify, or adapt with an Agent when needed. Two public CC0 photo demonstrations are included; private photographs and model weights are excluded.
 
 ## Using your Pro allowance
 
@@ -114,6 +136,6 @@ Minor defects that do not distract at normal viewing size are acceptable. Delive
 
 AI may change identity, clouds, background texture, and small text. Prompts can reduce drift but cannot eliminate it. Upscaled dimensions are not native model resolution. Keep originals separately; calling the image tool sends selected inputs to the service provider.
 
-Issues and PRs are welcome for text-based experience, sanitized parameters, and workflow improvements. Do not submit photographs, previews, screenshots, generated images, or images encoded in text. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Issues and PRs are welcome for text-based experience, sanitized parameters, and workflow improvements. Public demonstrations live in `docs/assets/demos/` with sources and licenses; do not submit private photographs. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Code is provided as is under [MIT](LICENSE), without a guarantee of suitability for every device or scene. [Sources and licenses](THIRD_PARTY_NOTICES.md) lists reference projects and external tools.

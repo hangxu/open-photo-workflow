@@ -1,8 +1,8 @@
 # 来源与许可 / Sources and licenses
 
-本项目分享工作流和参考实现，项目自身代码采用 MIT。以下工具、模型和参考资料有各自的许可；本仓库不分发照片、模型权重、ICC 文件或这些工具的可执行程序。
+本项目分享工作流和参考实现，项目自身代码采用 MIT。以下工具、模型和参考资料有各自的许可；本仓库附有下述公开照片演示，不分发模型权重、ICC 文件或这些工具的可执行程序。
 
-This project shares a workflow and reference implementation under MIT. The tools, models, and references below retain their own terms. No photographs, model weights, ICC files, or external executables are bundled.
+This project shares a workflow and reference implementation under MIT. The tools, models, and references below retain their own terms. Public photo demonstrations are listed below. Model weights, ICC files, and external executables are not bundled.
 
 - [RawTherapee](https://github.com/RawTherapee/RawTherapee)：RAW 显影引擎，单独安装。/ RAW engine, installed separately.
 - [rawpy](https://github.com/letmaik/rawpy)、[Pillow](https://github.com/python-pillow/Pillow)、[NumPy](https://github.com/numpy/numpy)、[OpenCV](https://github.com/opencv/opencv)：通过包管理器安装的运行依赖，各自许可见上游。/ Runtime dependencies installed through the package manager; see their upstream licenses.
@@ -33,3 +33,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## 公开演示照片 / Public photo demonstrations
+
+风景原片由 Bonnie Moreland 拍摄，人像原片由 Wilfredor 拍摄，两者均采用 CC0 1.0。仓库展示其 AI 处理结果与对照。来源、作者及许可链接见 [演示照片说明](docs/demo-photos.md)。
+
+The landscape photograph is by Bonnie Moreland and the portrait by Wilfredor, both under CC0 1.0. This repository includes AI-edited results and comparisons. See [demo photo sources](docs/demo-photos.md) for attribution and license links.

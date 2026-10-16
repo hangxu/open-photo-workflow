@@ -12,6 +12,28 @@
 
 1536×1024 是本项目遇到的常见返回尺寸，不代表所有模型或版本都有固定上限。工作流按工具实际返回的尺寸处理。
 
+## 两张照片，看看四块修图后的变化
+
+两张 CC0 照片分别按浓郁旅拍、暖调杂志肖像处理。每张调用内置 `image_gen` 四次，经过 12% 重叠切块、配准拼合、FSRCNN 2× 超分和轻锐化，输出约 2000 万像素成片。
+
+**雪山湖景：去除紫灰偏色，提亮森林，增强湖水与雪山层次。**
+
+![雪山湖景：左为输入，右为四块处理成片](docs/assets/demos/landscape-comparison.jpg)
+
+**街头人像：暖铜色肤质、柔和高光与黑色头巾质感，保留闭眼表情。**
+
+![街头人像：左为输入，右为四块处理成片](docs/assets/demos/portrait-comparison.jpg)
+
+| 示例 | 四块合并 | 2× 超分成片 | 生成调用 |
+| --- | --- | --- | --- |
+| 风景 | 2743×1829 | 5486×3658 | 4 次 |
+| 人像 | 2742×1828 | 5484×3656 | 4 次 |
+
+[风景局部](docs/assets/demos/landscape-detail.jpg) · [人像局部](docs/assets/demos/portrait-detail.jpg) · [来源与 CC0 许可](docs/demo-photos.md) · [完整提示词和处理记录](docs/demo-prompts.json)
+
+下载完整成片：[风景 5486×3658](docs/assets/demos/landscape-final.jpg) · [人像 5484×3656](docs/assets/demos/portrait-final.jpg)。对照图左侧为输入，右侧为四块处理结果。
+
+
 ## 核心方法：四块生成，再拼合与超分
 
 ```mermaid
@@ -40,7 +62,7 @@ flowchart LR
 
 这条路线至少消耗四次生成，可能出现接缝或局部形变，适合希望提高成片尺寸、又接受少量生成瑕疵的任务。具体步骤见 [imagegen-tiled-upscale SKILL](skills/imagegen-tiled-upscale/SKILL.md)。仓库也分享整组照片规划、基础图准备、摄影提示词和直接调光方法；欢迎拿去改，补充好用的提示词和踩过的坑。
 
-**代码仅供参考。安装 SKILL 不需要安装 Python 依赖，也不需要跑测试。** [reference-code/](reference-code/) 保留了本地处理的实现，供有需要的人阅读、修改或让 Agent 适配自己的环境。本仓库不包含任何照片或模型权重。
+**代码仅供参考。安装 SKILL 不需要安装 Python 依赖，也不需要跑测试。** [reference-code/](reference-code/) 保留了本地处理的实现，供有需要的人阅读、修改或让 Agent 适配自己的环境。仓库附有两组公开 CC0 样片演示，不包含私人照片或模型权重。
 
 ## 怎么用 Pro 额度修照片
 
@@ -114,6 +136,6 @@ Codex 在设置了 CODEX_HOME 时使用其 skills/ 子目录，否则使用 ~/.c
 
 AI 可能改动人物、云层、背景纹理和小字；提示词能减少漂移，不能保证消除。超分尺寸不等于模型原生尺寸。原片应单独保留，调用图像工具会把选定图片发送给服务提供方。
 
-欢迎用 Issue 或 PR 分享文字经验、脱敏参数和工作流改进。本仓库不收照片，包括预览、截图、生成图片和编码进文本的图片。见 [贡献说明](CONTRIBUTING.md)。
+欢迎用 Issue 或 PR 分享文字经验、脱敏参数和工作流改进。公开演示集中放在 `docs/assets/demos/`，附来源与许可；请勿提交私人照片。见 [贡献说明](CONTRIBUTING.md)。
 
 代码按 [MIT](LICENSE) 发布、按现状提供，不保证适用于所有设备和场景。[来源与许可说明](THIRD_PARTY_NOTICES.md) 列出了参考项目与外部工具。

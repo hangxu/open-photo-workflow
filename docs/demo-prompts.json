@@ -1,0 +1,73 @@
+[
+  {
+    "id": "landscape",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Lake_Mountain_Landscape.jpg",
+    "license": "CC0 1.0",
+    "input_dimensions": [
+      5184,
+      3456
+    ],
+    "merged_dimensions": [
+      2743,
+      1829
+    ],
+    "final_dimensions": [
+      5486,
+      3658
+    ],
+    "generation_calls": 4,
+    "overlap": 0.12,
+    "postprocess": "FSRCNN 2x; USM radius=1.2 percent=80 threshold=2",
+    "prompts": {
+      "TL": "Edit this exact photograph crop into a vivid, polished alpine travel-editorial photograph. Make the improvement clearly visible: remove the dull lavender/blue cast, lift murky forest midtones about 0.7 stop, rich emerald and olive evergreen foliage, clean cool teal shadows, warm champagne-neutral highlights, luminous ivory snow and cloud whites, stronger graceful contrast with open shadows. Water retains its actual reflections and gains clear subdued teal-green color; sky retains its existing cloud shapes and soft overcast daylight. Keep the real mountain, tree silhouettes, shoreline, rock and log positions, textures, perspective and all crop boundaries exactly located. Enhance existing fine photographic detail, not invented scenery. No new sun, clouds, objects, fog, people, letters or borders. This is one tile of a larger photo: maintain the same restrained warm-highlights/cool-shadows grade throughout; do not create a new lighting gradient or vignette at crop edges. Return only this crop, same aspect ratio, maximum native photographic detail.\nVisible: mostly overcast sky, snow mountain below center, conifers along the bottom. Keep mountain peak shape and snow boundaries.",
+      "TR": "Edit this exact photograph crop into a vivid, polished alpine travel-editorial photograph. Make the improvement clearly visible: remove the dull lavender/blue cast, lift murky forest midtones about 0.7 stop, rich emerald and olive evergreen foliage, clean cool teal shadows, warm champagne-neutral highlights, luminous ivory snow and cloud whites, stronger graceful contrast with open shadows. Water retains its actual reflections and gains clear subdued teal-green color; sky retains its existing cloud shapes and soft overcast daylight. Keep the real mountain, tree silhouettes, shoreline, rock and log positions, textures, perspective and all crop boundaries exactly located. Enhance existing fine photographic detail, not invented scenery. No new sun, clouds, objects, fog, people, letters or borders. This is one tile of a larger photo: maintain the same restrained warm-highlights/cool-shadows grade throughout; do not create a new lighting gradient or vignette at crop edges. Return only this crop, same aspect ratio, maximum native photographic detail.\nVisible: overcast sky at left and the diagonal forested slope and tall conifers at right. No mountain peak or lake is visible; do not add either.",
+      "BL": "Edit this exact photograph crop into a vivid, polished alpine travel-editorial photograph. Make the improvement clearly visible: remove the dull lavender/blue cast, lift murky forest midtones about 0.7 stop, rich emerald and olive evergreen foliage, clean cool teal shadows, warm champagne-neutral highlights, luminous ivory snow and cloud whites, stronger graceful contrast with open shadows. Water retains its actual reflections and gains clear subdued teal-green color; sky retains its existing cloud shapes and soft overcast daylight. Keep the real mountain, tree silhouettes, shoreline, rock and log positions, textures, perspective and all crop boundaries exactly located. Enhance existing fine photographic detail, not invented scenery. No new sun, clouds, objects, fog, people, letters or borders. This is one tile of a larger photo: maintain the same restrained warm-highlights/cool-shadows grade throughout; do not create a new lighting gradient or vignette at crop edges. Return only this crop, same aspect ratio, maximum native photographic detail.\nVisible: partial snow mountain cut by the top edge, forest and its lake reflection, small foreground stones. Preserve mountain truncation, lake reflections and waterline.",
+      "BR": "Edit this exact photograph crop into a vivid, polished alpine travel-editorial photograph. Make the improvement clearly visible: remove the dull lavender/blue cast, lift murky forest midtones about 0.7 stop, rich emerald and olive evergreen foliage, clean cool teal shadows, warm champagne-neutral highlights, luminous ivory snow and cloud whites, stronger graceful contrast with open shadows. Water retains its actual reflections and gains clear subdued teal-green color; sky retains its existing cloud shapes and soft overcast daylight. Keep the real mountain, tree silhouettes, shoreline, rock and log positions, textures, perspective and all crop boundaries exactly located. Enhance existing fine photographic detail, not invented scenery. No new sun, clouds, objects, fog, people, letters or borders. This is one tile of a larger photo: maintain the same restrained warm-highlights/cool-shadows grade throughout; do not create a new lighting gradient or vignette at crop edges. Return only this crop, same aspect ratio, maximum native photographic detail.\nVisible: forested shoreline, lake reflection, rocky shore and fallen tree trunks. No mountain peak is visible; do not add one. Retain the log and rock silhouettes."
+    },
+    "provider": "Codex built-in image_gen",
+    "actual_model": null,
+    "token_usage": null,
+    "review": {
+      "passed": true,
+      "tolerance": "minor",
+      "viewing_long_edge": 2560,
+      "notes": "整体光色与森林湖面层次明显改善，山形、岸线与倒影保持；云层与植被细纹经过生成重绘。"
+    }
+  },
+  {
+    "id": "portrait",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Woman_in_a_headwrap_in_Quebec_City.jpg",
+    "license": "CC0 1.0",
+    "input_dimensions": [
+      3840,
+      2560
+    ],
+    "merged_dimensions": [
+      2742,
+      1828
+    ],
+    "final_dimensions": [
+      5484,
+      3656
+    ],
+    "generation_calls": 4,
+    "overlap": 0.12,
+    "postprocess": "FSRCNN 2x; USM radius=1.2 percent=80 threshold=2",
+    "prompts": {
+      "TL": "Retouch ONLY this exact crop of an existing photograph into a warm, polished fashion-editorial portrait. The look should be noticeably refined: rich warm bronze-brown skin faithful to the original complexion, softly luminous champagne highlights, deep neutral-black fabric, warm ivory-beige background, elegant film-like contrast. Remove the purple/cold cast and digital grain, reduce isolated blemishes and oily hotspots, even skin locally while preserving natural fine pores and face structure. Lift subject midtones gently, make the existing lighting sculptural and flattering through dodge and burn, retain the original light direction and depth of field. Refine only existing makeup in muted warm brown/rose tones where lips are visible. Preserve identity, profile silhouette, age, expression, headwrap folds and outline, earring circle and attachment, necklace, pose and exact positions. No slimming, facial reshaping, added jewelry, new background, new light sources or new objects. Keep every crop boundary and edge intersection fixed, do not zoom/reframe/complete anything cut off. Use the same warm bronze skin/champagne highlight/ivory background grade consistently across this image tile, without a local vignette. Return only the edited crop at the same aspect ratio with maximum native photographic detail.\nThis crop shows a partial side-profile forehead, nose, cheek and visibly CLOSED eye at the bottom right, and the black headwrap above. Keep the eye CLOSED, identical eyelid opening, eye shape, lash line and expression. Do not invent pupils, eye white, catchlights or an open eye. Keep the mouth outside this crop.",
+      "TR": "Retouch ONLY this exact crop of an existing photograph into a warm, polished fashion-editorial portrait. The look should be noticeably refined: rich warm bronze-brown skin faithful to the original complexion, softly luminous champagne highlights, deep neutral-black fabric, warm ivory-beige background, elegant film-like contrast. Remove the purple/cold cast and digital grain, reduce isolated blemishes and oily hotspots, even skin locally while preserving natural fine pores and face structure. Lift subject midtones gently, make the existing lighting sculptural and flattering through dodge and burn, retain the original light direction and depth of field. Refine only existing makeup in muted warm brown/rose tones where lips are visible. Preserve identity, profile silhouette, age, expression, headwrap folds and outline, earring circle and attachment, necklace, pose and exact positions. No slimming, facial reshaping, added jewelry, new background, new light sources or new objects. Keep every crop boundary and edge intersection fixed, do not zoom/reframe/complete anything cut off. Use the same warm bronze skin/champagne highlight/ivory background grade consistently across this image tile, without a local vignette. Return only the edited crop at the same aspect ratio with maximum native photographic detail.\nThis crop shows black headwrap fabric and a partial temple/ear at bottom left against an ivory background. No eye is visible. Do not add a face or eye or expand the crop.",
+      "BL": "Retouch ONLY this exact crop of an existing photograph into a warm, polished fashion-editorial portrait. The look should be noticeably refined: rich warm bronze-brown skin faithful to the original complexion, softly luminous champagne highlights, deep neutral-black fabric, warm ivory-beige background, elegant film-like contrast. Remove the purple/cold cast and digital grain, reduce isolated blemishes and oily hotspots, even skin locally while preserving natural fine pores and face structure. Lift subject midtones gently, make the existing lighting sculptural and flattering through dodge and burn, retain the original light direction and depth of field. Refine only existing makeup in muted warm brown/rose tones where lips are visible. Preserve identity, profile silhouette, age, expression, headwrap folds and outline, earring circle and attachment, necklace, pose and exact positions. No slimming, facial reshaping, added jewelry, new background, new light sources or new objects. Keep every crop boundary and edge intersection fixed, do not zoom/reframe/complete anything cut off. Use the same warm bronze skin/champagne highlight/ivory background grade consistently across this image tile, without a local vignette. Return only the edited crop at the same aspect ratio with maximum native photographic detail.\nThis crop shows lower side-profile nose, lips, chin, neck and part of a gold hoop earring; the closed eyelash/eyelid sliver is cut by the top edge. Preserve that exact truncation and do not open or complete the eye. Keep lip contour and nose/chin silhouette fixed.",
+      "BR": "Retouch ONLY this exact crop of an existing photograph into a warm, polished fashion-editorial portrait. The look should be noticeably refined: rich warm bronze-brown skin faithful to the original complexion, softly luminous champagne highlights, deep neutral-black fabric, warm ivory-beige background, elegant film-like contrast. Remove the purple/cold cast and digital grain, reduce isolated blemishes and oily hotspots, even skin locally while preserving natural fine pores and face structure. Lift subject midtones gently, make the existing lighting sculptural and flattering through dodge and burn, retain the original light direction and depth of field. Refine only existing makeup in muted warm brown/rose tones where lips are visible. Preserve identity, profile silhouette, age, expression, headwrap folds and outline, earring circle and attachment, necklace, pose and exact positions. No slimming, facial reshaping, added jewelry, new background, new light sources or new objects. Keep every crop boundary and edge intersection fixed, do not zoom/reframe/complete anything cut off. Use the same warm bronze skin/champagne highlight/ivory background grade consistently across this image tile, without a local vignette. Return only the edited crop at the same aspect ratio with maximum native photographic detail.\nThis crop shows ear and gold hoop, neck, fine necklace, black headwrap and shoulder, blurred background. No eye or lips are visible. Do not add them. Preserve the hoop geometry and necklace placement."
+    },
+    "provider": "Codex built-in image_gen",
+    "actual_model": null,
+    "token_usage": null,
+    "review": {
+      "passed": true,
+      "tolerance": "minor",
+      "viewing_long_edge": 2560,
+      "notes": "闭眼表情、侧脸轮廓及耳环衔接保留，暖铜色肤质与黑色服饰层次更明显，局部肤理有生成重绘。"
+    },
+    "registration_note": "Default SIFT followed by contrastThreshold=0.01 feature detection for low-contrast tiles; original inlier, ratio and geometric acceptance criteria retained."
+  }
+]

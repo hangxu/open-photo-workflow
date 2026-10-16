@@ -31,7 +31,7 @@ skill-drafts/
 state.json
 generation-observation.json
 
-# No photographs or generated images, including upper-case camera suffixes.
+# Exclude photos by default; selected public demos are allowed below.
 *.[jJ][pP][gG]
 *.[jJ][pP][eE][gG]
 *.[pP][nN][gG]
@@ -58,3 +58,11 @@ generation-observation.json
 *.[rR][aA][wW]
 
 .release-local/
+
+# Selected CC0 demonstrations and edited results
+!docs/assets/demos/landscape-comparison.jpg
+!docs/assets/demos/landscape-detail.jpg
+!docs/assets/demos/landscape-final.jpg
+!docs/assets/demos/portrait-comparison.jpg
+!docs/assets/demos/portrait-detail.jpg
+!docs/assets/demos/portrait-final.jpg
