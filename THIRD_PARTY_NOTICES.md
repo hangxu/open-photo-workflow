@@ -39,3 +39,7 @@ SOFTWARE.
 风景原片由 Bonnie Moreland 拍摄，人像原片由 Wilfredor 拍摄，两者均采用 CC0 1.0。仓库展示其 AI 处理结果与对照。来源、作者及许可链接见 [演示照片说明](docs/demo-photos.md)。
 
 The landscape photograph is by Bonnie Moreland and the portrait by Wilfredor, both under CC0 1.0. This repository includes AI-edited results and comparisons. See [demo photo sources](docs/demo-photos.md) for attribution and license links.
+
+新增中国样片：桂林木龙湖由 Chlukoe 拍摄，北京春节人像由 benniaotang 拍摄，均为 CC0 1.0。见 [来源与许可](docs/china-demo-photos.md)。
+
+Additional China demos: Mulonghu Park by Chlukoe and the Beijing New Year portrait by benniaotang, both CC0 1.0. See [sources and licenses](docs/china-demo-photos.md).

@@ -12,6 +12,24 @@ In our Codex built-in `image_gen` runs, we repeatedly received **1536×1024** la
 
 1536×1024 is a common size observed in this project, not a claim that every model or version has a fixed limit. The workflow uses the dimensions the tool actually returns.
 
+## China demos: jade-green Guilin and a warm Beijing portrait
+
+Two more CC0 photographs, each edited with four built-in `image_gen` calls, merged, then upscaled with FSRCNN 2×. Input on the left; result on the right.
+
+**Mulonghu Park, Guilin: a muted overcast scene becomes a vivid jade-green travel editorial.**
+
+![Guilin: source and four-tile result](docs/assets/demos/china-landscape-comparison.jpg)
+
+[Full result · 5484×3656](docs/assets/demos/china-landscape-final.jpg) · [Architecture and landscape detail](docs/assets/demos/china-landscape-detail.jpg)
+
+**Chinese New Year in Beijing: warmer skin tones, rich festive reds, and the child's original expression.**
+
+![Beijing portrait: source and four-tile result](docs/assets/demos/china-portrait-comparison.jpg)
+
+[Full result · 3656×5486](docs/assets/demos/china-portrait-final.jpg) · [Face detail](docs/assets/demos/china-portrait-detail.jpg)
+
+[Photographers, sources and CC0 licenses](docs/china-demo-photos.md) · [Full prompts](docs/china-demo-prompts.json)
+
 ## Two photos, edited with four tiles
 
 Two CC0 photographs, styled as a vivid alpine travel editorial and a warm bronze portrait. Each photo uses four built-in `image_gen` calls, 12% overlap, registration and blending, followed by FSRCNN 2× and light sharpening.
@@ -62,7 +80,7 @@ These are calculated examples, not guaranteed generation results. Overlapping pi
 
 This route requires at least four image calls and can produce seams or local distortion. It suits tasks that need larger results and can tolerate minor generative defects. See the [imagegen-tiled-upscale skill](skills/imagegen-tiled-upscale/SKILL.md) for the procedure. We also share collection planning, input preparation, photographic prompts, and local grading methods. Adapt them and contribute useful prompts or lessons from failed edits.
 
-**The code is for reference only. Installing the skills requires no Python dependencies or test runs.** [reference-code/](reference-code/) contains local implementations to read, modify, or adapt with an Agent when needed. Two public CC0 photo demonstrations are included; private photographs and model weights are excluded.
+**The code is for reference only. Installing the skills requires no Python dependencies or test runs.** [reference-code/](reference-code/) contains local implementations to read, modify, or adapt with an Agent when needed. Four public CC0 photo demonstrations are included; private photographs and model weights are excluded.
 
 ## Using your Pro allowance
 

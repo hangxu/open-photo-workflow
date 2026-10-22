@@ -1,0 +1,70 @@
+[
+  {
+    "id": "china-landscape",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mulonghupark_Guilin_Guangxi.jpg",
+    "license": "CC0 1.0",
+    "input_dimensions": [
+      5616,
+      3744
+    ],
+    "merged_dimensions": [
+      2742,
+      1828
+    ],
+    "final_dimensions": [
+      5484,
+      3656
+    ],
+    "generation_calls": 4,
+    "overlap": 0.12,
+    "postprocess": "FSRCNN 2x; USM radius=1.2 percent=80 threshold=2",
+    "provider": "Codex built-in image_gen",
+    "actual_model": null,
+    "token_usage": null,
+    "prompts": {
+      "TL": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Professional Chinese landscape travel editorial, luminous jade-green mountains and clean muted turquoise lake, ivory overcast sky, warm natural timber and stone highlights, sophisticated deep emerald shadows. Lift dull foliage midtones about 0.6 stop, improve tonal separation and real photographic texture. Make the color grading visibly richer yet elegant. Preserve architecture geometry, pagoda floors, rooflines, branches, rocks, waterline and existing sky. Do not add sun, dramatic clouds, fog, buildings, text or people. Mostly ivory overcast sky; hill silhouettes at bottom and tiny pagoda tip bottom right. Keep the empty sky.",
+      "TR": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Professional Chinese landscape travel editorial, luminous jade-green mountains and clean muted turquoise lake, ivory overcast sky, warm natural timber and stone highlights, sophisticated deep emerald shadows. Lift dull foliage midtones about 0.6 stop, improve tonal separation and real photographic texture. Make the color grading visibly richer yet elegant. Preserve architecture geometry, pagoda floors, rooflines, branches, rocks, waterline and existing sky. Do not add sun, dramatic clouds, fog, buildings, text or people. Rocky karst mountain right, empty sky left, tiny pagoda tip bottom left. Preserve mountain shape.",
+      "BL": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Professional Chinese landscape travel editorial, luminous jade-green mountains and clean muted turquoise lake, ivory overcast sky, warm natural timber and stone highlights, sophisticated deep emerald shadows. Lift dull foliage midtones about 0.6 stop, improve tonal separation and real photographic texture. Make the color grading visibly richer yet elegant. Preserve architecture geometry, pagoda floors, rooflines, branches, rocks, waterline and existing sky. Do not add sun, dramatic clouds, fog, buildings, text or people. Willows, traditional buildings and pagoda, lake foreground. Preserve all architecture.",
+      "BR": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Professional Chinese landscape travel editorial, luminous jade-green mountains and clean muted turquoise lake, ivory overcast sky, warm natural timber and stone highlights, sophisticated deep emerald shadows. Lift dull foliage midtones about 0.6 stop, improve tonal separation and real photographic texture. Make the color grading visibly richer yet elegant. Preserve architecture geometry, pagoda floors, rooflines, branches, rocks, waterline and existing sky. Do not add sun, dramatic clouds, fog, buildings, text or people. Forest slope, pagoda at left and lake foreground; preserve waterline."
+    },
+    "review": {
+      "passed": true,
+      "tolerance": "minor",
+      "notes": "Reviewed full frame and portrait face: coherent style and seams, original pose and gaze retained; generated texture and minor background differences accepted."
+    }
+  },
+  {
+    "id": "china-portrait",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Girl_in_New_Year_Beijing.jpg",
+    "license": "CC0 1.0",
+    "input_dimensions": [
+      3840,
+      5760
+    ],
+    "merged_dimensions": [
+      1828,
+      2743
+    ],
+    "final_dimensions": [
+      3656,
+      5486
+    ],
+    "generation_calls": 4,
+    "overlap": 0.12,
+    "postprocess": "FSRCNN 2x; USM radius=1.2 percent=80 threshold=2",
+    "provider": "Codex built-in image_gen",
+    "actual_model": null,
+    "token_usage": null,
+    "prompts": {
+      "TL": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Warm documentary family portrait for a Chinese New Year photo essay. Remove the heavy blue cast, with natural warm peach skin where visible, luminous soft warm highlights, muted blue-gray background shadows, rich festive red scarf and lanterns, soft rose-pink coat, natural black hair and trousers. Lift subject exposure about 0.5 stop with gentle rolloff, retaining the original depth of field and bokeh. Keep child's exact identity, age, face proportions, hairstyle, pose, clothing, hands and sleeve obscuring the mouth. No makeup, face reshaping or age change. Preserve exact gaze direction, eyelid shape and opening, pupil positions and eye highlights. Do not invent facial detail beyond what is visible. Keep background geometry and all objects in place. Mostly blurred tree trunks and red lanterns; small cropped portion of child's head and coat at bottom right. Never complete the cropped face.",
+      "TR": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Warm documentary family portrait for a Chinese New Year photo essay. Remove the heavy blue cast, with natural warm peach skin where visible, luminous soft warm highlights, muted blue-gray background shadows, rich festive red scarf and lanterns, soft rose-pink coat, natural black hair and trousers. Lift subject exposure about 0.5 stop with gentle rolloff, retaining the original depth of field and bokeh. Keep child's exact identity, age, face proportions, hairstyle, pose, clothing, hands and sleeve obscuring the mouth. No makeup, face reshaping or age change. Preserve exact gaze direction, eyelid shape and opening, pupil positions and eye highlights. Do not invent facial detail beyond what is visible. Keep background geometry and all objects in place. Child's face and upper coat at bottom left with sleeve covering mouth; blurred trees above. Preserve both visible eyes exactly.",
+      "BL": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Warm documentary family portrait for a Chinese New Year photo essay. Remove the heavy blue cast, with natural warm peach skin where visible, luminous soft warm highlights, muted blue-gray background shadows, rich festive red scarf and lanterns, soft rose-pink coat, natural black hair and trousers. Lift subject exposure about 0.5 stop with gentle rolloff, retaining the original depth of field and bokeh. Keep child's exact identity, age, face proportions, hairstyle, pose, clothing, hands and sleeve obscuring the mouth. No makeup, face reshaping or age change. Preserve exact gaze direction, eyelid shape and opening, pupil positions and eye highlights. Do not invent facial detail beyond what is visible. Keep background geometry and all objects in place. Partially cropped child along right edge, pink sleeve, scarf, toy flowers and one shoe; blurred background. Do not complete the body outside the crop.",
+      "BR": "Edit only this exact photograph crop. Preserve every crop boundary, object location, perspective and silhouette; do not reframe or extend the scene. Return this same crop at the same aspect ratio, with maximum native detail. This tile will be stitched to neighboring tiles: no vignette, edge darkening or new lighting gradient. Warm documentary family portrait for a Chinese New Year photo essay. Remove the heavy blue cast, with natural warm peach skin where visible, luminous soft warm highlights, muted blue-gray background shadows, rich festive red scarf and lanterns, soft rose-pink coat, natural black hair and trousers. Lift subject exposure about 0.5 stop with gentle rolloff, retaining the original depth of field and bokeh. Keep child's exact identity, age, face proportions, hairstyle, pose, clothing, hands and sleeve obscuring the mouth. No makeup, face reshaping or age change. Preserve exact gaze direction, eyelid shape and opening, pupil positions and eye highlights. Do not invent facial detail beyond what is visible. Keep background geometry and all objects in place. Child with head cropped by top edge, sleeve covering mouth, scarf, trousers, shoes and pavement. Preserve original gaze, stance and body outline."
+    },
+    "review": {
+      "passed": true,
+      "tolerance": "minor",
+      "notes": "Reviewed full frame and portrait face: coherent style and seams, original pose and gaze retained; generated texture and minor background differences accepted."
+    }
+  }
+]

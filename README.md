@@ -12,6 +12,24 @@
 
 1536×1024 是本项目遇到的常见返回尺寸，不代表所有模型或版本都有固定上限。工作流按工具实际返回的尺寸处理。
 
+## 中国样片：青绿桂林，暖调北京
+
+新增两张 CC0 公开照片，每张四次内置 `image_gen`，合并后再做 FSRCNN 2×。左侧为原片，右侧为成片。
+
+**桂林木龙湖：从灰闷阴天到层次鲜明的青绿旅拍。**
+
+![桂林木龙湖，原片与四块成片](docs/assets/demos/china-landscape-comparison.jpg)
+
+[完整成片 · 5484×3656](docs/assets/demos/china-landscape-final.jpg) · [古建与山体局部](docs/assets/demos/china-landscape-detail.jpg)
+
+**北京春节人像：改善偏冷肤色，让红围巾、灯笼和自然神态更动人。**
+
+![北京春节人像，原片与四块成片](docs/assets/demos/china-portrait-comparison.jpg)
+
+[完整成片 · 3656×5486](docs/assets/demos/china-portrait-final.jpg) · [面部局部](docs/assets/demos/china-portrait-detail.jpg)
+
+[作者、原片与 CC0 来源](docs/china-demo-photos.md) · [本次完整提示词](docs/china-demo-prompts.json)
+
 ## 两张照片，看看四块修图后的变化
 
 两张 CC0 照片分别按浓郁旅拍、暖调杂志肖像处理。每张调用内置 `image_gen` 四次，经过 12% 重叠切块、配准拼合、FSRCNN 2× 超分和轻锐化，输出约 2000 万像素成片。
@@ -62,7 +80,7 @@ flowchart LR
 
 这条路线至少消耗四次生成，可能出现接缝或局部形变，适合希望提高成片尺寸、又接受少量生成瑕疵的任务。具体步骤见 [imagegen-tiled-upscale SKILL](skills/imagegen-tiled-upscale/SKILL.md)。仓库也分享整组照片规划、基础图准备、摄影提示词和直接调光方法；欢迎拿去改，补充好用的提示词和踩过的坑。
 
-**代码仅供参考。安装 SKILL 不需要安装 Python 依赖，也不需要跑测试。** [reference-code/](reference-code/) 保留了本地处理的实现，供有需要的人阅读、修改或让 Agent 适配自己的环境。仓库附有两组公开 CC0 样片演示，不包含私人照片或模型权重。
+**代码仅供参考。安装 SKILL 不需要安装 Python 依赖，也不需要跑测试。** [reference-code/](reference-code/) 保留了本地处理的实现，供有需要的人阅读、修改或让 Agent 适配自己的环境。仓库附有四组公开 CC0 样片演示，不包含私人照片或模型权重。
 
 ## 怎么用 Pro 额度修照片
 
